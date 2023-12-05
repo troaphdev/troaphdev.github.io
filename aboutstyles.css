@@ -1,0 +1,132 @@
+.button {
+  background-color : whitesmoke;
+  font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration : none;
+  color : black;
+  background : white;
+  background : linear-gradient(to right bottom, rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.2));
+  backdrop-filter : blur(1rem);
+  z-index : 1;
+  justify-content : center;
+  align-items : center;
+  box-shadow : 0 0 1rem rgb(0, 0, 0, 0.2);
+  font-size : 4vw;
+  margin-left : auto;
+  margin-right : auto;
+  margin-top : 2vw;
+  width : 35vw;
+  text-align : center;
+  display : flex;
+  justify-content : center;
+  height : 8vw;
+  transition-duration : 400ms;
+  box-shadow : 0.298vw 0.298vw 0.298vw rgb(0, 0, 0);
+  border-radius : 2vw;
+  }
+  .button:hover {
+  border-color : #e8e8e5;
+  transform : scale(1.1);
+  }
+  body {
+  background : linear-gradient(-45deg, #ee8e52, #e73c7e, #23a6d5, #23d5ab, rgb(255, 0, 255)), lightcoral;
+  background-size : 700% 700%;
+  animation : gradient 15s ease infinite;
+  }
+  @keyframes gradient {
+  0% {
+  background-position : 0% 50%;
+  }
+  50% {
+  background-position : 100% 50%;
+  }
+  100% {
+  background-position : 0% 50%;
+  }
+  }
+  .main {
+  margin-top : 4vw;
+  background-color : deepskyblue;
+  text-align : center;
+  margin-right : auto;
+  margin-left : auto;
+  height : 40vw;
+  width : 35vw;
+  font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition-duration : 500ms;
+  background : white;
+  background : linear-gradient(to right bottom, rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.2));
+  backdrop-filter : blur(1rem);
+  z-index : 1;
+  justify-content : center;
+  align-items : center;
+  border-radius : 4.3vw;
+  box-shadow : 0 0 1rem rgb(0, 0, 0, 0.2);
+  }
+  .headersection {
+  font-size : 3.6vw;
+  font-weight : 600;
+  }
+  .descriptionsection {
+  font-size : 1.8vw;
+  margin-top : -3vw;
+  margin-left : 2vw;
+  margin-right : 2vw;
+  }
+  #fadein {
+  animation : fadein 1500ms;
+  }
+  @keyframes fadein {
+  0% {
+  opacity : 0;
+  }
+  100% {
+  opacity : 1;
+  }
+  }
+  h3 {
+  font-size : 2vw;
+  margin-top : -2vw;
+  }
+  .links {
+  font-size : 2vw;
+  margin-top : -2vw;
+  text-decoration : none;
+  transition-timing-function : ease-in-out;
+  transition-duration : 1s;
+  font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left : 10%;
+  margin-right : 10%;
+  border-radius : 1vw;
+  }
+  .linksection {
+  margin-top : 8.5%;
+  word-spacing : 5vw;
+  }
+  a {
+  text-decoration : none;
+  text-shadow : 0 0 1rem rgb(0, 0, 0, 0.2);
+  font-weight : 600;
+  }
+  img:hover {
+  transform : scale(1.3);
+  transition-timing-function : ease-in-out;
+  transition-duration : 0.35s;
+  }
+  img {
+  transition-timing-function : ease-in-out;
+  transition-duration : 0.35s;
+  height : 3vw;
+  }
+  #emailLink {
+  color : gray;
+  }
+  #website {
+  color : hotpink;
+  }
+  .fa-youtube {
+  background : red;
+  color : white;
+  }
+  * {
+  cursor : cell;
+  }

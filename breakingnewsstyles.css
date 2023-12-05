@@ -1,0 +1,156 @@
+.thumbnail {
+    width : 19vw;
+    height : 19vw;
+    border-radius : 1vw 1vw 0 0;
+    box-shadow : 0 0.476vw 0 0 rgb(0, 0, 0, 0.1);
+    }
+    .articletitle {
+    font-family : 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size : 2.5vw;
+    margin-top : 0.595vw;
+    margin-bottom : 0.595vw;
+    }
+    .container {
+    text-align : center;
+    }
+    .preview {
+    align-items : center;
+    align-content : center;
+    width : 19vw;
+    height : 29vw;
+    background-color : white;
+    background : linear-gradient(to right bottom, rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.2));
+    backdrop-filter : blur(1rem);
+    box-shadow : 0 0 1rem rgb(0, 0, 0, 0.2);
+    border-radius : 1vw;
+    transition-duration : 300ms;
+    transition-timing-function : ease-in-out;
+    }
+    #preview1:hover {
+    box-shadow : 0 0 0.595vw 0.357vw green;
+    background-color : green;
+    border-color : green;
+    }
+    #preview2:hover {
+    box-shadow : 0 0 0.595vw 0.357vw yellow;
+    background-color : yellow;
+    border-color : yellow;
+    color : black;
+    }
+    #preview3:hover {
+    box-shadow : 0 0 0.595vw 0.357vw blue;
+    background-color : blue;
+    border-color : blue;
+    color : white;
+    }
+    #preview4:hover {
+    box-shadow : 0 0 0.595vw 0.357vw red;
+    background-color : red;
+    border-color : red;
+    color : white;
+    }
+    .main {
+    display : flex;
+    justify-content : space-between;
+    margin-left : 5%;
+    margin-right : 5%;
+    transform : translateY(5%);
+    }
+    body {
+    background : linear-gradient(-45deg, #ee8e52, #e73c7e, #23a6d5, #23d5ab, rgb(255, 0, 255)), lightcoral;
+    background-size : 400% 400%;
+    animation : gradient 15s ease infinite;
+    height : 100vw;
+    }
+    @keyframes gradient {
+    0% {
+    background-position : 0% 50%;
+    }
+    50% {
+    background-position : 100% 50%;
+    }
+    100% {
+    background-position : 0% 50%;
+    }
+    }
+    .title {
+    font-family : Arial, Helvetica, sans-serif;
+    font-size : 10vw;
+    display : flex;
+    justify-content : center;
+    color : whitesmoke;
+    margin-bottom : 0.655vw;
+    font-weight : 900;
+    text-shadow : 0.3vw 0.3vw 0.3vw rgb(0, 0, 0);
+    }
+    .button {
+    background-color : whitesmoke;
+    font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration : none;
+    color : black;
+    height : 7.5vw;
+    background : white;
+    background : linear-gradient(to right bottom, rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.2));
+    backdrop-filter : blur(1rem);
+    z-index : 1;
+    justify-content : center;
+    align-items : center;
+    border-radius : 2rem;
+    box-shadow : 0 0 1rem rgb(0, 0, 0, 0.2);
+    font-size : 4vw;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : 2.083vw;
+    width : 40vw;
+    text-align : center;
+    display : flex;
+    justify-content : center;
+    transition-duration : 400ms;
+    box-shadow : 0.298vw 0.298vw 0.298vw rgb(0, 0, 0);
+    border-radius : 2vw 2vw 2vw 2vw;
+    align-self : center;
+    }
+    .button:hover {
+    border-color : azure;
+    transform : scale(1.1);
+    opacity : 100%;
+    }
+    a {
+    text-decoration : none;
+    color : black;
+    }
+    .alls {
+    height : 32vw;
+    width : 95vw;
+    background : white;
+    background : linear-gradient(to right bottom, rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.2));
+    backdrop-filter : blur(1rem);
+    z-index : 1;
+    justify-content : center;
+    align-items : center;
+    border-radius : 2vw;
+    box-shadow : 0 0 1rem rgb(0, 0, 0, 0.2);
+    margin-left : auto;
+    margin-right : auto;
+    }
+    p {
+    margin-top : -0.595vw;
+    font-size : 0.9vw;
+    }
+    .preview:hover {
+    transform : scale(1.05);
+    }
+    #fadein {
+    animation : fadein 1500ms;
+    }
+    @keyframes fadein {
+    0% {
+    opacity : 0;
+    }
+    100% {
+    opacity : 1;
+    }
+    }
+    *{
+        cursor: cell;
+      }

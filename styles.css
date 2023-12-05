@@ -1,0 +1,109 @@
+.title {
+    margin-top: 6vw;
+    text-align: center;
+    line-height: 0;
+  }
+  .second {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14vw;
+    margin-top: 8vw;
+    height: auto;
+    color: rgb(255, 255, 255, 0.899);
+    text-shadow: 0.29vw 0.29vw 0.29vw rgb(0, 0, 0);
+    font-weight: 900;
+  }
+  .button {
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 4vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.06vw;
+    width: 30vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 7vw;
+    transition-duration: 400ms;
+    box-shadow: 0.298vw 0.298vw 0.298vw rgb(0, 0, 0);
+    background: white;
+    background: linear-gradient(to right bottom, rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.2));
+    backdrop-filter: blur(1rem);
+    align-items: center;
+    box-shadow: 0 0 1rem rgb(0, 0, 0, 0.2);
+    position:relative;
+    z-index: 1;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+  }
+  .button:hover {
+    z-index: 2;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+  }
+  .bottom {
+    border-radius: 0 0 2vw 2vw;
+  }
+  .top {
+    border-radius: 2vw 2vw 0 0;
+  }
+  .center:hover {
+    border-radius: 2.381vw 2.381vw 2.381vw 2.381vw;
+    border-color: whitesmoke;
+    transform: scale(1.2);
+  }
+  .top:hover {
+    border-radius: 2.381vw 2.381vw 2.381vw 2.381vw;
+    border-color: whitesmoke;
+    transform: scale(1.2);
+  }
+  .bottom:hover {
+    border-radius: 2.381vw 2.381vw 2.381vw 2.381vw;
+    border-color: whitesmoke;
+    transform: scale(1.2);
+  }
+  .buttons {
+    margin-top: -3vw;
+  }
+  #fadein {
+    animation: fadein 1500ms;
+  }
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .first {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 9.5vw;
+    margin-bottom: -1.19vw;
+    margin-top: 4.5%;
+    color: rgb(255, 255, 255, 0.899);
+    text-shadow: 0.29vw 0.29vw 0.29vw rgb(0, 0, 0);
+  }
+  body {
+    background: linear-gradient(-45deg, #ee8e52, #e73c7e, #23a6d5, #23d5ab, rgb(255, 0, 255)), lightcoral;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 50%;
+    }
+  }
+  * {
+    cursor: cell;
+  }
