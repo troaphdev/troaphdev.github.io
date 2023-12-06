@@ -95,7 +95,7 @@
   border-radius : 0 0 4vw 4vw;
   transition-duration : 500ms;
   box-shadow : 0 -6px 0 silver;
-  border:0px;
+  border:0vw;
   }
   * {
   cursor : cell;

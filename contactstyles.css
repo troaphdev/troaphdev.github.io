@@ -136,15 +136,6 @@
     display: flex;
     justify-content: space-between;
   }
-  #forminput:hover {
-    background-color : white;
-    border-color : white;
-    transition-timing-function : ease-in-out;
-    transition-duration : 400ms;
-    box-shadow : 0 0 0.595vw 0.357vw white;
-    background-color : white;
-    border-color : white;
-    }
 #forminput{
     transition-timing-function : ease-in-out;
     transition-duration : 400ms;
