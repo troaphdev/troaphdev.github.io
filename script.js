@@ -10,24 +10,20 @@ for (let i = 0; i < numBlobs; i++) {
   blob.style.width = size + 'px';
   blob.style.height = size + 'px';
   
-  // Set initial left position based on index
+  // Position left half or right half
   if (i < 2) {
-    // Left half: x between 0% and 50%
-    blob.style.left = Math.random() * 50 + '%';
+    blob.style.left = Math.random() * 50 + '%'; // 0%-50%
   } else {
-    // Right half: x between 50% and 100%
-    blob.style.left = (50 + Math.random() * 50) + '%';
+    blob.style.left = (50 + Math.random() * 50) + '%'; // 50%-100%
   }
-  
-  // Top position is random across full height
   blob.style.top = Math.random() * 100 + '%';
   
-  // Random pastel-like color with alpha
+  // Random pastel color w/ alpha
   blob.style.background = `rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, 0.6)`;
   
   blobsContainer.appendChild(blob);
   
-  // Animate blob position every 4 seconds within its respective half
+  // Animate position every 4 seconds
   setInterval(() => {
     if (i < 2) {
       blob.style.left = Math.random() * 50 + '%';
@@ -37,3 +33,11 @@ for (let i = 0; i < numBlobs; i++) {
     blob.style.top = Math.random() * 100 + '%';
   }, 4000);
 }
+
+// Sidebar expand/collapse
+const expandBtn = document.querySelector('.expand-sidebar-btn');
+const sidebar = document.querySelector('.sidebar');
+
+expandBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('expanded');
+});

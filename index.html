@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>troaph.portal</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="style.css" />
@@ -13,10 +13,21 @@
 
   <!-- Sidebar / Top Bar -->
   <div class="sidebar">
+    <button class="expand-sidebar-btn">☰</button>
+    <hr class="sidebar-separator">
     <div class="sidebar-icons">
-      <button onclick="window.location.reload()">🏠</button>
-      <button onclick="window.location.href='https://troaphdev.github.io/worldnews'">📰</button>
-      <button onclick="window.location.href='https://troaphdev.github.io/code-playground'">💻</button>
+      <button onclick="window.location.reload()">
+        <span class="icon">🏠</span>
+        <span class="label">Home</span>
+      </button>
+      <button onclick="window.location.href='https://troaphdev.github.io/worldnews'">
+        <span class="icon">📰</span>
+        <span class="label">World News</span>
+      </button>
+      <button onclick="window.location.href='https://troaphdev.github.io/code-playground'">
+        <span class="icon">💻</span>
+        <span class="label">Playground</span>
+      </button>
     </div>
   </div>
 
