@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Troaph Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background blobs -->
+  <div class="blobs-container"></div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-icons">
+      <button onclick="window.location.reload()">🏠</button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Page Title and Description -->
+    <header class="page-header">
+      <h1>troaph.portal</h1>
+      <p>Games & Apps</p>
+    </header>
+
+    <!-- Cards Container -->
+    <div class="cards-container">
+      <!-- Left Column: World News -->
+      <div class="left-column">
+        <a href="https://troaphdev.github.io/worldnews" class="editor-card">
+          <div class="color-bar" style="background-color: #1e90ff;"></div>
+          <div class="editor-card-header">World News</div>
+          <div class="editor-card-content">
+            <p>Explore global events with a playful twist.</p>
+          </div>
+        </a>
+      </div>
+      <!-- Right Column: Code Playground -->
+      <div class="right-column">
+        <a href="https://troaphdev.github.io/code-playground" class="editor-card">
+          <div class="color-bar" style="background-color: #ff4500;"></div>
+          <div class="editor-card-header">Code Playground</div>
+          <div class="editor-card-content">
+            <p>Unleash creativity with interactive code experiments.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
