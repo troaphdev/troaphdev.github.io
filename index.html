@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Websites Portal</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Troaph's Code Editor</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Background blobs -->
-  <div class="blobs-container"></div>
-
-  <!-- Sidebar -->
+  <div class="blobs-container" id="blobsContainer"></div>
+  
+  <!-- Updated Sidebar matching My Websites Portal -->
   <div class="sidebar">
     <div class="sidebar-icons">
-      <button onclick="window.location.reload()">🏠</button>
+      <!-- Home icon now navigates to the portal instead of reloading -->
+      <button onclick="window.location.href='https://troaphdev.github.io/'" title="Home">🏠</button>
+      <button onclick="window.location.href='https://troaphdev.github.io/worldnews'" title="World News">📰</button>
+      <button onclick="window.location.href='https://troaphdev.github.io/code-playground'" title="Code Playground">💻</button>
     </div>
   </div>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <!-- Page Title and Description -->
-    <header class="page-header">
-      <h1>troaph.portal</h1>
-      <p>Games & Apps</p>
-    </header>
-
-    <!-- Cards Container -->
-    <div class="cards-container">
-      <!-- Left Column: World News -->
-      <div class="left-column">
-        <a href="https://troaphdev.github.io/worldnews" class="editor-card">
-          <div class="color-bar" style="background-color: #1e90ff;"></div>
-          <div class="editor-card-header">World News</div>
-          <div class="editor-card-content">
-            <p>A news website designed to have a clean ui.</p>
-          </div>
-        </a>
+  
+  <div class="main-content" id="mainContent">
+    <div class="left-column" id="leftColumn">
+      <div class="editor-card">
+        <div class="editor-card-header">HTML</div>
+        <div class="editor-card-content">
+          <textarea id="htmlCode" spellcheck="false">
+<h1>Hello, World!</h1>
+<p>This is a test paragraph.</p>
+          </textarea>
+        </div>
       </div>
-      <!-- Right Column: Code Playground -->
-      <div class="right-column">
-        <a href="https://troaphdev.github.io/code-playground" class="editor-card">
-          <div class="color-bar" style="background-color: #ff4500;"></div>
-          <div class="editor-card-header">Code Playground</div>
+      <div class="editor-card">
+        <div class="editor-card-header">JS</div>
+        <div class="editor-card-content">
+          <textarea id="jsCode" spellcheck="false">
+console.log("Hello from JavaScript!");
+          </textarea>
+        </div>
+      </div>
+    </div>
+    <div class="vertical-splitter" id="verticalSplitter"></div>
+    <div class="right-column" id="rightColumn">
+      <div class="css-panel" id="cssPanel">
+        <div class="editor-card" style="height: calc(100% - 2.5rem); margin: 0.5rem;">
+          <div class="editor-card-header">CSS Editor</div>
           <div class="editor-card-content">
-            <p>Interactive code experiments with HTML, CSS, and JavaScript.</p>
+            <textarea id="cssCode" spellcheck="false">
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  font-family: sans-serif;
+}
+h1 {
+  color: #f03;
+}
+            </textarea>
           </div>
-        </a>
+        </div>
+      </div>
+      <div class="horizontal-splitter" id="horizontalSplitter"></div>
+      <div class="preview-panel" id="previewPanel">
+        <div class="preview-title">Live Preview</div>
+        <iframe class="preview-iframe" id="previewFrame" srcdoc=""></iframe>
       </div>
     </div>
   </div>
-
+  
+  <button class="floating-button" id="runButton">RUN</button>
   <script src="script.js"></script>
 </body>
 </html>
