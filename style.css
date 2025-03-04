@@ -164,12 +164,16 @@ body {
   width: 100%;
   padding: 1rem;
 }
+
+/* Updated Columns for Cards */
 .left-column,
+.center-column,
 .right-column {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .editor-card {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
